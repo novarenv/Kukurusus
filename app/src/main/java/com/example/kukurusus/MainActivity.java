@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         rvKursus = findViewById(R.id.rv_kursus);
         rvKursus.setHasFixedSize(true);
         rvCategory = findViewById(R.id.rv_category);
-//        rvCategory.setHasFixedSize(true);
+        rvCategory.setHasFixedSize(true);
 
         listKursus.addAll(KursusData.getListData());
         listCategory.addAll(CategoryData.getListData());

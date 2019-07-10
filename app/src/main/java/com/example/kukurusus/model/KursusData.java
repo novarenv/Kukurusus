@@ -7,6 +7,11 @@ import java.util.ArrayList;
 public class KursusData {
     public static String[][] data = new String[][]{
             {"Name", "Price", Integer.toString(R.drawable.btn_bahasa), "Location"},
+            {"Name", "Harga", Integer.toString(R.drawable.btn_code), "Lokasi"},
+            {"Name", "Harga", Integer.toString(R.drawable.btn_code), "Lokasi"},
+            {"Name", "Harga", Integer.toString(R.drawable.btn_code), "Lokasi"},
+            {"Name", "Harga", Integer.toString(R.drawable.btn_code), "Lokasi"},
+            {"Name", "Harga", Integer.toString(R.drawable.btn_code), "Lokasi"},
             {"Name", "Harga", Integer.toString(R.drawable.btn_code), "Lokasi"}
     };
 

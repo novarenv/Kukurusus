@@ -32,7 +32,7 @@ public class CVCategoryAdapter extends RecyclerView.Adapter<CVCategoryAdapter.Ca
     public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
         Category category = getListCategory().get(position);
 
-        holder.ivCategory.setImageResource(R.drawable.btn_bahasa);
+        holder.ivCategory.setImageResource(Integer.valueOf(category.getPhoto()));
         holder.tvCategory.setText(category.getName());
     }
 
