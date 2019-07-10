@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_category"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginEnd="10dp"
+    android:layout_gravity="left"
+    app:cardCornerRadius="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/iv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/desc"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/btn_bahasa" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_category"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="Category"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -55,7 +55,7 @@
             <HorizontalScrollView
                 android:id="@+id/category_kursus"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_marginBottom="16dp"
                 android:layout_below="@+id/category">
 
@@ -63,32 +63,41 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <android.support.v7.widget.RecyclerView
-                        android:id="@+id/rv_category"
-                        android:layout_width="55dp"
-                        android:layout_height="55dp" />
 
                     <ImageView
                         android:layout_width="55dp"
-                        android:layout_height="55dp"
+                        android:layout_height="wrap_content"
                         android:contentDescription="@string/desc"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/btn_bahasa" />
 
-                    <Space
-                        android:layout_width="10dp"
-                        android:layout_height="wrap_content" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/category_kursus"/>
 
-                    <ImageView
-                        android:layout_width="55dp"
-                        android:layout_height="55dp"
-                        android:contentDescription="@string/desc"
-                        android:scaleType="fitXY"
-                        app:srcCompat="@drawable/btn_code" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="55dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:contentDescription="@string/desc"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--app:srcCompat="@drawable/btn_bahasa" />-->
 
-                    <Space
-                        android:layout_width="10dp"
-                        android:layout_height="wrap_content" />
+                    <!--<Space-->
+                        <!--android:layout_width="10dp"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="55dp"-->
+                        <!--android:layout_height="55dp"-->
+                        <!--android:contentDescription="@string/desc"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--app:srcCompat="@drawable/btn_code" />-->
+
+                    <!--<Space-->
+                        <!--android:layout_width="10dp"-->
+                        <!--android:layout_height="wrap_content" />-->
 
                 </LinearLayout>
             </HorizontalScrollView>
