@@ -81,30 +81,6 @@
             </TableRow>
 
             <TableRow
-                android:id="@+id/tr_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
-                    android:layout_weight="2"
-                    android:text="Nama"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="10"
-                    android:text="Isi"
-                    android:textSize="16sp" />
-            </TableRow>
-
-            <TableRow
                 android:id="@+id/tr_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -121,6 +97,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_price"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="10"
@@ -145,6 +122,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_location"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="10"
@@ -152,21 +130,14 @@
                     android:textSize="16sp" />
             </TableRow>
 
-            <TableRow
-                android:id="@+id/tv_certif"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    android:text="Sertifikat"/>
-            </TableRow>
+                android:text="Sertifikat"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <TableRow
                 android:id="@+id/tr_certif"
@@ -216,6 +187,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_kuota"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="10"
@@ -240,6 +212,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_jadwal"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="10"
