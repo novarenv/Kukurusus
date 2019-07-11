@@ -1,12 +1,10 @@
 package com.example.kukurusus;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.example.kukurusus.adapter.CVCategoryAdapter;
 import com.example.kukurusus.adapter.CVListKursusAdapter;
@@ -22,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rvCategory;
     private ArrayList<Kursus> listKursus = new ArrayList<>();
     private ArrayList<Category> listCategory = new ArrayList<>();
+    Context context = MainActivity.this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showListKursus() {
-        CVListKursusAdapter cvListKursusAdapter = new CVListKursusAdapter(listKursus);
+        CVListKursusAdapter cvListKursusAdapter = new CVListKursusAdapter(listKursus, context, this);
         cvListKursusAdapter.setListKursus(listKursus);
         rvKursus.setLayoutManager(new LinearLayoutManager(this));
         rvKursus.setAdapter(cvListKursusAdapter);

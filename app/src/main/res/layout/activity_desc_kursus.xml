@@ -31,11 +31,12 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/diskon_50"
+                    app:srcCompat="@drawable/kursus_bahasa"
                     tools:ignore="MissingConstraints" />
             </android.support.constraint.ConstraintLayout>
 
             <ImageView
+                android:id="@+id/iv_back"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="10dp"

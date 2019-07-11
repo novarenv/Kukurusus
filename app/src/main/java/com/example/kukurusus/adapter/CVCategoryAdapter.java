@@ -34,6 +34,7 @@ public class CVCategoryAdapter extends RecyclerView.Adapter<CVCategoryAdapter.Ca
 
         holder.ivCategory.setImageResource(Integer.valueOf(category.getPhoto()));
         holder.tvCategory.setText(category.getName());
+//        holder.tvCategory.setText(listCategory.size());
     }
 
     @Override
