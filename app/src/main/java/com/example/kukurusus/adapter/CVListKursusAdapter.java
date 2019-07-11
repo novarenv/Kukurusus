@@ -40,7 +40,7 @@ public class CVListKursusAdapter extends RecyclerView.Adapter<CVListKursusAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final CardViewViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final CardViewViewHolder holder, final int position) {
         final Kursus kursus = getListKursus().get(position);
 
         holder.ivFotoKursus.setImageResource(Integer.valueOf(kursus.getPhoto()));
@@ -53,6 +53,8 @@ public class CVListKursusAdapter extends RecyclerView.Adapter<CVListKursusAdapte
             public void onClick(View v) {
                 intent = new Intent(context, DescKursusAct.class);
                 intent.putExtra(DescKursusAct.EXTRA_NAMA, kursus.getName());
+
+                intent.putExtra("Kursus", kursus);
                 mainActivity.startActivity(intent);
             }
         });
