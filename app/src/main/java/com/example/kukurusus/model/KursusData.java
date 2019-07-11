@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class KursusData {
     public static String[][] data = new String[][]{
-            {"Name", "Price", Integer.toString(R.drawable.btn_bahasa), "Location"},
+            {"Raveraldz's Language", "100.000", Integer.toString(R.drawable.kursus_bahasa), "Jl. Bahasain Aja 555"},
             {"Name", "Harga", Integer.toString(R.drawable.btn_code), "Lokasi"},
             {"Name", "Harga", Integer.toString(R.drawable.btn_code), "Lokasi"},
             {"Name", "Harga", Integer.toString(R.drawable.btn_code), "Lokasi"},

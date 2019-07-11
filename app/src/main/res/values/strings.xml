@@ -5,4 +5,5 @@
     <string name="nama_kursus">Nama Kursus</string>
     <string name="harga_kursus">Harga Kursus</string>
     <string name="lokasi_kursus">Lokasi Kursus</string>
+    <string name="title_activity_desc_kursus">DescKursusActivity</string>
 </resources>
