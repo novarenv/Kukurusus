@@ -55,7 +55,7 @@ public class DescKursusAct extends AppCompatActivity {
         tvLocation.setText(location);
         String certif = kursus.getCertif();
         ivCertif = findViewById(R.id.iv_certif);
-        ivCertif.setImageResource(Integer.valueOf(gambarDetail));
+        ivCertif.setImageResource(Integer.valueOf(certif));
         String kuota = kursus.getKuota();
         tvKuota = findViewById(R.id.tv_kuota);
         tvKuota.setText(kuota);
