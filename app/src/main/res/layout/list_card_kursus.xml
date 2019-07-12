@@ -9,7 +9,7 @@
     android:layout_marginBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     app:cardCornerRadius="4dp"
-    app:cardBackgroundColor="@color/cardview_dark_background">
+    app:cardBackgroundColor="#F0F1EC">
 
     <RelativeLayout
         android:layout_width="match_parent"

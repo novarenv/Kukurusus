@@ -103,7 +103,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/iv_pelajaran"
                                 android:layout_centerInParent="true"
-                                android:text="Rias"
+                                android:text="Pelajaran"
                                 android:textSize="12sp" />
 
                         </RelativeLayout>
@@ -194,6 +194,7 @@
             </HorizontalScrollView>
 
             <LinearLayout
+                style="@style/TextColorBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/category_kursus">
